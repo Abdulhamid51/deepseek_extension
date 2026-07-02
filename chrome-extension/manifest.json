@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek VS Code Linker",
+  "version": "1.0",
+  "description": "VS Code bilan DeepSeek saytini bog'lovchi ko'prik",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.deepseek.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
