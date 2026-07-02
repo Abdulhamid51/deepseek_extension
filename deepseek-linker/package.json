@@ -1,0 +1,35 @@
+{
+  "name": "deepseek-linker",
+  "displayName": "DeepSeek Linker",
+  "description": "DeepSeek Linker",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:deepseek-linker.sendCode"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "deepseek-linker.sendCode",
+        "title": "DeepSeek: Kodni yuborish va o'zgartirish"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "deepseek-linker.sendCode",
+        "key": "ctrl+shift+0",
+        "mac": "cmd+shift+0",
+        "when": "editorHasSelection"
+      }
+    ]
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
